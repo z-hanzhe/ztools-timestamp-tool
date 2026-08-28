@@ -4,7 +4,7 @@
   "title": "时间戳工具",
   "description": "快速转换各种格式的时间",
   "author": "hanzhe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.html",
   "logo": "logo.png",
   "development": {
