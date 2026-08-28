@@ -1,7 +1,8 @@
 {
   "$schema": "node_modules/@ztools-center/ztools-api-types/resource/ztools.schema.json",
-  "name": "timestamp",
+  "name": "timestamp-tool",
   "title": "时间戳工具",
+  "homepage": "https://github.com/z-hanzhe/ztools-timestamp-tool",
   "description": "快速转换各种格式的时间",
   "author": "hanzhe",
   "version": "1.0.1",

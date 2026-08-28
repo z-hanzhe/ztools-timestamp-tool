@@ -4,7 +4,7 @@
 
 ## 效果展示
 
-![时间戳工具首页](https://raw.githubusercontent.com/z-hanzhe/ztools-timestamp/refs/heads/main/docs/images/demo.png)
+![时间戳工具首页](https://raw.githubusercontent.com/z-hanzhe/ztools-timestamp-tool/refs/heads/main/docs/images/demo.png)
 
 ## 功能
 
