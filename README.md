@@ -36,4 +36,4 @@ npm run dev
 npm run build
 ```
 
-构建产物位于 `src-ztools/dist/`，可将 `src-ztools/` 作为完整插件目录导入 zTools 开发者工具。
+构建产物位于 `dist/`，可将 `dist/` 作为完整插件目录导入 zTools 开发者工具。发布到官方插件仓库时，请在项目根目录执行 `ztools publish`，官方 Action 会先执行构建，再将 `dist/` 内容打包为可安装 ZIP。

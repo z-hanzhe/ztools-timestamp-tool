@@ -1,13 +1,12 @@
-import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
+// dist 是可直接导入和供官方 Action 打包的完整插件目录。
 export default defineConfig({
   plugins: [vue()],
   base: './',
   build: {
-    outDir: fileURLToPath(new URL('./src-ztools/dist', import.meta.url)),
+    outDir: 'dist',
     emptyOutDir: true
   }
 })

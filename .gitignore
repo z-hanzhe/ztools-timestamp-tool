@@ -4,8 +4,8 @@ node_modules/
 
 # 构建产物
 dist/
-src-ztools/dist/
 .vite/
+*.zpx
 
 # 本地环境配置
 .env
