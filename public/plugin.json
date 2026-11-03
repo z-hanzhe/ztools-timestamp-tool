@@ -5,7 +5,7 @@
   "homepage": "https://github.com/z-hanzhe/ztools-timestamp-tool",
   "description": "快速转换各种格式的时间",
   "author": "hanzhe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.html",
   "logo": "logo.png",
   "development": {

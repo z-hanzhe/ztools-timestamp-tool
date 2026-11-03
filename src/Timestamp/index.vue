@@ -172,7 +172,8 @@ function saveSelectedTimezones(): void {
   if (ztoolsApi) {
     try {
       if (typeof ztoolsApi.dbStorage?.setItem === 'function') {
-        ztoolsApi.dbStorage.setItem(SELECTED_TIMEZONES_KEY, selectedTimezones.value)
+        // 先序列化，避免 Vue 响应式数组无法通过宿主进程的数据克隆。
+        ztoolsApi.dbStorage.setItem(SELECTED_TIMEZONES_KEY, JSON.stringify(selectedTimezones.value))
       }
     } catch (_error) {
       // zTools 数据存储不可用时不影响转换功能。
@@ -490,7 +491,7 @@ function resetInputAndFocus(): void {
   })
 }
 
-watch(selectedTimezones, saveSelectedTimezones, { deep: true })
+watch(selectedTimezones, saveSelectedTimezones, { deep: true, flush: 'sync' })
 
 onMounted(() => {
   document.addEventListener('keydown', handleKeydown)
